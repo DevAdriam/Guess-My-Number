@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GUESS THE NUMBER</title>
+  </head>
+  <link rel="stylesheet" href="./guess.css" />
+  <body>
+    <div class="container">
+      <h2 class="header">Can you guess my number between 0 to 20 ?</h2>
+
+      <div class="wrapper">
+        <div class="guessbox">
+          <input type="text" class="guessinput" />
+          <button type="button" class="btn">Guess</button>
+        </div>
+
+        <div class="unknownbox">?</div>
+        <div class="quizzbox"></div>
+      </div>
+
+      <p class="hint">lemme support you</p>
+
+      <div class="btn-wrapper">
+        <button id="refresh" class="again">
+          <img
+            src="./rotating-arrow-to-the-left.png"
+            alt="again"
+            width="35px"
+          />
+          <span>Again</span>
+        </button>
+
+        <button id="refresh" class="restart">
+          <img src="./power-on.png" alt="restart" width="40px" />
+          <span>restart</span>
+        </button>
+      </div>
+
+      <div class="score-wrapper">
+        <p class="score">
+          <img src="./dice.png" alt="score" width="40px" /><span>Score</span>
+          <span id="scoretext"></span>
+        </p>
+
+        <p class="highscore">
+          <img src="./high-score.png" alt="score" width="40px" /><span
+            >Highscore</span
+          ><span id="highscoretext"></span>
+        </p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
