@@ -54,7 +54,7 @@ body {
 
 .unknownbox {
   position: absolute;
-  left: 55%;
+  left: 57%;
   z-index: 2;
 }
 
@@ -99,6 +99,7 @@ body {
 
 .btn:hover {
   background: #ff3cac;
+  box-shadow: 3px 0px 5px 5px #ff3caa70;
 }
 
 .quizzbox,
@@ -177,17 +178,25 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   body .container {
     width: 400px;
+    height: max-content;
   }
   .quizzbox,
   .guessbox,
   .unknownbox {
-    width: 150px;
+    width: 130px;
   }
 
   .header {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    width: 100%;
   }
 }
