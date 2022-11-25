@@ -194,9 +194,10 @@ body {
   }
 
   .btn-wrapper {
+    width: 100%;
+
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 40px;
-    width: 100%;
   }
 }
